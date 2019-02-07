@@ -1,25 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import P from './Modules/P';
+import A from './Modules/A';
+import H1 from './Modules/H1';
+import { Input } from './Modules';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <P />
+        <A fontSize="big"/>
+        <div>
+          <H1 fontSize="big" />
+        </div>
+        <div>
+          <Input small={false} />
+        </div>
       </div>
     );
   }
